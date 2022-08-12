@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <nav>
+            <!-- flask will inject the text for about/home by calling the relevant functions. The functions must have the same name as the code inside the double curly brackets. It MUST be single quotes-->
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li><a href="{{url_for('about')}}">About</a></li>
+            <li><a href="{{url_for('contact')}}">Contact</a></li>
+        </nav>
+        <!-- {% are for statements that control the flow of template such as block element or loops
+        'content' can be replaced with any label -->
+        {% block content%}
+        {%enblock%}
+        
+        <script src="" async defer></script>
+    </body>
+</html>

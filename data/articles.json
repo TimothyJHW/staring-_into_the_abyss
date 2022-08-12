@@ -1,0 +1,21 @@
+
+[
+    {
+        "title": "What Seems to be the Matter",
+        "date" : "20/3/2022",
+        "subjects": ["Graeber", "Anomie", "Spengler"],
+        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ad. Provident atque reprehenderit optio, odio repellendus placeat illo sit ullam?",
+        "image" :"https://images.unsplash.com/photo-1503525148566-ef5c2b9c93bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+        "url": "what-seems-to-be-the-matter"
+    },
+
+    {
+        "title": "The War About Nothing",
+        "date" : "10/8/2022",
+        "subjects": ["Ukraine", "Russia", "Globalisation"],
+        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nulla! Aliquid veritatis odit beatae iure neque provident molestias voluptates et debitis voluptas atque ullam, inventore natus iste distinctio suscipit deserunt deleniti. Repellat quisquam placeat voluptas optio laudantium sunt perspiciatis sequi architecto praesentium, ratione tempore sapiente dolorum voluptatem qui cum unde.",
+        "image" :"https://www.usip.org/sites/default/files/styles/image_with_caption/public/20220718-US%20UKRAINE%20WEAPONS%201-nyt-ac.jpg?itok=Nfzqsqwu",
+        "url": "the-war-about-nothing"
+    }
+
+]

@@ -1,0 +1,44 @@
+{% extends("base.html")%}    
+
+{%block content %}
+<!-- {{articles[0]["Title"]}} -->
+<!-- {{list_of_numbers}}
+{%for number in list_of_numbers%}
+<p>{{number}}</p> -->
+<!-- {%endfor%} -->
+        <h2>{{page_title}}</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint eligendi iure harum molestias illo rerum, cum inventore
+            eveniet eum enim unde saepe totam culpa expedita similique doloremque. Architecto iusto placeat fuga magni temporibus
+            tempore molestiae explicabo magnam ipsum aspernatur illum pariatur animi, saepe commodi expedita, vero quaerat suscipit,
+            ea eaque!
+        </p>
+        {% for article in articles %}
+            <div class="row featurette">
+                <!-- the jinija templating language generates a "loop" object for each for loop and the index property is the iterator of the loop -->
+                {% if loop.index %2 != 0%}
+                    <div class="col-md-7">
+                        <h3><a href="/about/{{article.url}}">{{article.title}}</a></h3>
+                        <p>{{article.text}}</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="{{article.image}}" alt="">
+                    </div>
+                {%else%}
+                    <div class="col-md-5">
+                        <img src="{{article.image}}" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <h3><a href="/about/{{article.url}}">{{article.title}}</a></h3>
+                        <p>{{article.text}}</p>
+                    </div>
+
+
+                {%endif%}
+            </div>
+            {% if loop.index !=2%}
+                <hr class="featurette-divider">
+                {%endif%}
+        {%endfor%}
+    
+{% endblock %}    
