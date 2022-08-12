@@ -1,4 +1,8 @@
 1. Create a Heroku app through the dashboard
 2. Connect Git remote to Heroku 
 3. Create a 'requirements.txt' file which contains a list of our python dependencies
+    pip3 freeze --local > requirements.txt
+    this redirects freeze command into new txt. Freeze lists all the dependencies for this project. Ran into some trouble with this, until I realised that freeze lists ALL dependencies including globally installed ones.
+    git push -u heroku master
 4. Create a Heroku 'Procfile' tells Heroku how to run our project.
+    echo web: python run.py > Procfile.
