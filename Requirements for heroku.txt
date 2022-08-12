@@ -1,0 +1,4 @@
+1. Create a Heroku app through the dashboard
+2. Connect Git remote to Heroku 
+3. Create a 'requirements.txt' file which contains a list of our python dependencies
+4. Create a Heroku 'Procfile' tells Heroku how to run our project.
